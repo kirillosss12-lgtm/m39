@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Галерея картинок</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page">
+
+  <header class="header">
+    <h1 class="header__title">Интерактивная галерея</h1>
+    <button class="button" id="load-btn">Загрузить котиков</button>
+  </header>
+
+  <main class="content">
+    <!-- Спиннер загрузки (скрыт по умолчанию) -->
+    <div class="loader loader_hidden" id="page-loader">
+      <div class="loader__spinner"></div>
+    </div>
+
+    <!-- Блок для вывода сообщений об ошибках -->
+    <div class="error-message error-message_hidden" id="error-box"></div>
+
+    <!-- Сетка галереи -->
+    <div class="gallery" id="image-gallery"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
